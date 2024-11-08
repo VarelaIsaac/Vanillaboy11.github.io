@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SI-OES</title>
+  <link rel="stylesheet" href="Resources/CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="Resources/CSS/bootstrap-icons.css">
+  <link rel="stylesheet" href="Resources/CSS/styles.css"> <!-- Enlace al archivo CSS -->
+  <script src="Resources/JavaScript/bootstrap.bundle.min.js"></script>
+  <style>
+    .centered-content {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Placeholder color for all input elements */
+    input::placeholder {
+      color: gray;
+      opacity: 1;
+    }
+
+    /* Custom footer styling */
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 0.01em 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      transition: transform 0.3s ease;
+      /* Transición suave para el movimiento */
+    }
+
+    .footer.hidden {
+      transform: translateY(100%);
+      /* Mueve el pie de página fuera de la vista */
+    }
+
+
+    /* Styling for the description section */
+    #descripcion {
+      padding: 50px 0;
+      background-color: #f8f9fa;
+    }
+
+    /* Styling the white box with a light gray transparent background */
+    .description-box {
+      background-color: rgba(255, 255, 255, 0.85);
+      /* White with slight opacity */
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body class="h-100 text-bg-dark">
+
+  <!-- Header -->
+  <header class="mb-auto" data-bs-theme="dark">
+    <div>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SI-OES</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#acerca">Acerca de</a> <!-- Enlace a la sección 'Acerca' -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-3 centered-content">
+    <h1>SI-OES</h1>
+    <p class="lead">Estacionamiento ágil, seguro y eco-friendly.</p>
+    <p class="lead">
+      <a href="#descripcion" class="btn btn-lg btn-light fw-bold border-white bg-white">Ver más</a>
+    </p>
+  </main>
+
+  <!-- Section: About Us -->
+  <section id="acerca" class="py-5 bg-secondary text-white text-center">
+    <div class="container">
+      <h2>Acerca de Nosotros</h2>
+      <p>Nuestro sistema de optimización de estacionamiento utiliza tecnología avanzada
+        y seguridad biométrica para mejorar la gestión de áreas de estacionamiento, maximizando
+        la eficiencia, seguridad y sostenibilidad. A través de sensores inteligentes y algoritmos
+        de inteligencia artificial, el sistema monitorea y optimiza el uso de las áreas de
+        estacionamiento en tiempo real, guiando a los conductores de manera eficiente y minimizando
+        la congestión y el tiempo de búsqueda. Para garantizar la seguridad, el sistema emplea
+        control de acceso biométrico, permitiendo que los usuarios ingresen y salgan mediante
+        reconocimiento facial o de huella digital, brindando una experiencia fluida y segura.
+        Este enfoque no solo permite una gestión más efectiva del espacio disponible, sino que
+        también ayuda a reducir la huella de carbono al minimizar la circulación innecesaria dentro
+        del estacionamiento, beneficiando tanto a los usuarios como al entorno. Con esta solución,
+        los operadores pueden maximizar la eficiencia operativa del área sin necesidad de intervención
+        manual constante, y los usuarios disfrutan de un acceso seguro, optimizado y respetuoso con el
+        medio ambiente.</p>
+      <a href="#" class="btn btn-outline-light">Más información</a>
+    </div>
+  </section>
+
+  <!-- New Section: Description of the project -->
+  <section id="descripcion" class="py-5">
+    <div class="container text-center">
+      <div class="description-box text-dark">
+        <h2>Descripción del Proyecto</h2>
+        <p>Nuestro sistema de optimización de estacionamiento utiliza tecnología avanzada y seguridad biométrica para
+          mejorar la gestión de áreas de estacionamiento, maximizando la eficiencia, seguridad y sostenibilidad. A
+          través de sensores inteligentes y algoritmos de inteligencia artificial, el sistema monitorea y optimiza el
+          uso de las áreas de estacionamiento en tiempo real, guiando a los conductores de manera eficiente y
+          minimizando la congestión y el tiempo de búsqueda.
+          Para garantizar la seguridad, el sistema emplea control de acceso biométrico, permitiendo que los usuarios
+          ingresen y salgan mediante reconocimiento facial o de huella digital, brindando una experiencia fluida y
+          segura. Este enfoque no solo permite una gestión más efectiva del espacio disponible, sino que también ayuda a
+          reducir la huella de carbono al minimizar la circulación innecesaria dentro del estacionamiento, beneficiando
+          tanto a los usuarios como al entorno.
+          Con esta solución, los operadores pueden maximizar la eficiencia operativa del área sin necesidad de
+          intervención manual constante, y los usuarios disfrutan de un acceso seguro, optimizado y respetuoso con el
+          medio ambiente.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section: Services -->
+  <section id="servicios" class="py-5 text-center">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card bg-dark text-white mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Gestión de Eventos</h5>
+              <p class="card-text">Organiza y gestiona eventos de manera eficiente.</p>
+              <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-white mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Registro de Usuarios</h5>
+              <p class="card-text">Permite el registro y autenticación de usuarios en el sistema.</p>
+              <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-dark text-white mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Soporte Técnico</h5>
+              <p class="card-text">Ofrecemos asistencia técnica para solucionar problemas.</p>
+              <a href="#" class="btn btn-primary">Ver detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Contact -->
+  <section id="contact" class="contact">
+    <div class="contact-contain container">
+      <div class="contact-subtitle centered-content">
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-info">
+        <p>We are a team of Data Science and Computer Science students
+          looking forward to be the best version of
+          ourselves by studying, learning and teaching
+          the incredible world of science.
+        </p>
+      </div>
+      <div class="about-hr">
+        <hr>
+      </div>
+      <div class="contact-contain-members">
+        <div class="contact-group-contain">
+          <div class="contact-group">
+            <div class="contact-members">
+              <div class="contact-name">
+                <div class="contact-img"><img src="imagenes/Abi.jpg"></div>
+                <h3>Abigail</h3>
+              </div>
+              <div class="contact-links">
+                <div class="contact-links-a">
+                  <a href="mailto:priscila.martinez55@uabc.edu"><img class="icono" src="imagenes/gmail.png"></a>
+                  <a href="http://www.linkedin.com/in/christopher-argenis-preciado-silva-015157278"><img class="icono"
+                      src="imagenes/linkedin.png"></a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-members">
+              <div class="contact-name">
+                <div class="contact-img"><img src="imagenes/isaac.jpeg"></div>
+                <h3>Isaac</h3>
+              </div>
+              <div class="contact-links">
+                <div class="contact-links-a">
+                  <a href="mailto:Diego.gutierrez10@uabc.Edu.mx"><img class="icono" src="imagenes/gmail.png"></a>
+                  <a><img class="icono" src="imagenes/linkedin.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-group">
+            <div class="contact-members">
+              <div class="contact-name">
+                <div class="contact-img"><img src="imagenes/rafa.jpeg"></div>
+                <h3>Rafa</h3>
+              </div>
+              <div class="contact-links">
+                <div class="contact-links-a">
+                  <a href="mailto:rafael.moreno41@uabc.edu.mx"><img class="icono" src="imagenes/gmail.png"></a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-members">
+              <div class="contact-name">
+                <div class="contact-img"><img src="imagenes/angel.jpeg"></div>
+                <h3>Angel</h3>
+              </div>
+              <div class="contact-links">
+                <div class="contact-links-a">
+                  <a href="mailto:edgardo.valle2005@gmail.com"><img class="icono" src="imagenes/gmail.png"></a>
+                  <a href="https://www.linkedin.com/in/edgardo-valle-11a190316/"><img class="icono"
+                      src="imagenes/linkedin.png"></a>
+                  <a href="https://github.com/Botgardo"><img class="icono" src="imagenes/github.png"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <p>&copy; 2024 SI-OES. Todos los derechos reservados.</p>
+    <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+  </footer>
+
+  <script src="main.js"></script> <!-- Incluye el script JS que has creado -->
+</body>
+
+</html>
